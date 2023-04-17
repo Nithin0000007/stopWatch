@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.visitfinland.com/dam/jcr:10100117-5154-4a6d-afb7-56502939f9e3/___Finland_Aurora_dome_Jeris_Antti_Pietik%C3%A4inen.12422788202013340987.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#open-btn{
+    padding: 15px 30px; 
+    font-size: 25px;
+    position: absolute;
+    top:70%;
+    left: 10%;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#open-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.modal-div{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.386);
+    transition: 0.5s;
+}
+
+.modal{
+    height: 20%;
+    width: 20%;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+i{
+    font-size: 20px;
+    position: absolute;
+    top:20px;
+    right: 25px;
+    cursor: pointer;
+}
